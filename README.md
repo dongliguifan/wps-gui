@@ -3,7 +3,7 @@
 ## Before installation
 if your don't have node.js enviriment
 
-install node.js on your platform https://nodejs.org/en/download/
+install [node.js](https://nodejs.org/en/download/) on your platform 
 
 check node.js install in shell 
 ```
@@ -30,23 +30,25 @@ gulp -v
 
 all above, install all globaly depends your need.
 
-## Installation
+## Install
 in project root folder run shell  
 ##### build
+```
     npm install
     bower install
     gulp
-
-##### build WAR file(optional)
+```
+##### build WAR file(if your need)
 
     ant clean war
+
 
 ## Run
 The geoserver endpoint can be changed by editing the line `var options = url.parse('http://horizon.boundlessgeo.com/geoserver');` in `dev-server.js`.
 
 copy whole folder to your geoserver/webapp
 
-rename folder to wpsbuilder(optional)
+rename folder to "wpsbuilder"(optional)
 
 open http://localhost:8080/wpsbuilder in brower 
 

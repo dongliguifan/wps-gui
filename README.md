@@ -1,8 +1,10 @@
 # wps-gui
 
 ## Before installation
-if your donnot have node.js enviriment
+if your don't have node.js enviriment
+
 install node.js on your platform https://nodejs.org/en/download/
+
 check node.js install in shell 
 ```
 npm -v

@@ -44,11 +44,13 @@ in project root folder run shell
 
 
 ## Run
-The geoserver endpoint can be changed by editing the line `var options = url.parse('http://horizon.boundlessgeo.com/geoserver');` in `dev-server.js`.
+The geoserver endpoint can be changed by editing the line `var options = url.parse('http://localhost:8080/geoserver');` in `dev-server.js`.
 
 copy whole folder to your geoserver/webapp
 
 rename folder to "wpsbuilder"(optional)
+
+start geoserver by bin/startup.bat(startup.sh)
 
 open http://localhost:8080/wpsbuilder in brower 
 

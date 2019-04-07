@@ -540,7 +540,9 @@ wps.process.prototype.chainProcess = function(input, inputValue, chainLink) {
   inputValue.reference.body = {
     content: [chainLink.process.info]
   };
-  while (this.executeCallbacks.length > 0) {
+
+  // while --> if，解决有多个输入连接其他节点的输出时，执行会死循环的问题
+  if (this.executeCallbacks.length > 0) {
     this.executeCallbacks[0]();
   }
 };

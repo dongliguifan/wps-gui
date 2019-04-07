@@ -32,22 +32,7 @@ gulp.task('jsbuild', function(){
     // see https://github.com/highsource/w3c-schemas/issues/11
     bower_files.pop();
     var files = bower_files.concat([
-      'vendor/highlight/highlight.pack.js',
-      'components/vkBeautify/vkbeautify.js',
-      'components/w3c-schemas/scripts/lib/XLink_1_0.js',
-      'components/ogc-schemas/scripts/lib/Filter_1_1_0.js',
-      'components/ogc-schemas/scripts/lib/Filter_2_0.js',
-      'components/ogc-schemas/scripts/lib/GML_2_1_2.js',
-      'components/ogc-schemas/scripts/lib/GML_3_1_1.js',
-      'components/ogc-schemas/scripts/lib/OWS_1_0_0.js',
-      'components/ogc-schemas/scripts/lib/OWS_1_1_0.js',
-      'components/ogc-schemas/scripts/lib/SMIL_2_0.js',
-      'components/ogc-schemas/scripts/lib/SMIL_2_0_Language.js',
-      'components/ogc-schemas/scripts/lib/WCS_1_1.js',
-      'components/ogc-schemas/scripts/lib/WFS_1_1_0.js',
-      'components/ogc-schemas/scripts/lib/WPS_1_0_0.js',
-      'src/wpsclient.js',
-      'src/wpsui.js'
+      'vendor/highlight/highlight.pack.js'
     ]);
     gulp.src(files)
         .pipe(gp_filter('**/*.js'))
